@@ -24,7 +24,7 @@ const getHeaders = () => {
 
 export const fetchDashboard = () => {
   const { dispatch } = store;
-  get('http://localhost:5000/api/v1/dashboard').then(dashboard => {
+  get('http://localhost:3000/api/v1/dashboard').then(dashboard => {
     dispatch(fetchDashboardSuccess(dashboard.data));
   }).catch(({ response}) => {
     console.log(response);
@@ -34,7 +34,7 @@ export const fetchDashboard = () => {
 
 export const createRecord = data => {
   const { dispatch } = store;
-  post('http://localhost:5000/api/v1/new_record', {params: {...data}, headers: getHeaders()}).then(response => {
+  post('http://localhost:3000/api/v1/new_record', {params: {...data}, headers: getHeaders()}).then(response => {
     // dispatch(fetchDashboardSuccess(dashboard.data));
     console.log(response);
   }).catch(({response}) => {
