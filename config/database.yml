@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  username: postgres
+  password: password
+
+development:
+  <<: *default
+  database: brows_shedule_dev
+test:
+  <<: *default
+  database: brows_shedule_test
+
+production:
+  <<: *default
+  database: brows_shedule_prod

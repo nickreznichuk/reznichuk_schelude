@@ -1,0 +1,20 @@
+@import "dashboard";
+
+.nav_link_styles{
+  color: #fff;
+  padding: 5px 15px;
+  margin: 0 5px;
+  text-decoration: none!important;
+  border:1px solid white;
+  border-radius: 5px;
+}
+
+.nav_link_styles:hover {
+  color: #fff;
+  background-color: yellowgreen;
+  border:1px solid yellowgreen;
+}
+
+.container-wrapper {
+  margin-bottom: 70px;
+}

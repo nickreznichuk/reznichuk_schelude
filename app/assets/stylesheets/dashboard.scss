@@ -1,0 +1,22 @@
+// Place all the styles related to the Static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.spinner-styles {
+  width: 150px!important;
+  height: 150px!important;
+}
+
+.spinner-wrapper-styles {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+}
+
+.first-tr-styles {
+  width: 120px;
+}
+
+.card-styles {
+  margin-bottom: 10px;
+}
