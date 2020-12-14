@@ -1,2 +1,2 @@
-web: bundle exec puma -p ${PORT:-3000}
-webpack: ./bin/webpack
+web: bundle exec rails s
+webpack: NODE_ENV=production ./bin/webpack --watch --color --progres
